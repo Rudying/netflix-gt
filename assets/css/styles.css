@@ -1,0 +1,237 @@
+@font-face{
+    font-family: netflix;
+    src: url("../../fonts/.navigation-list");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: netflix;
+    src: url("../../fonts/.navigation-list");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.credits{
+    font-family: system-ui;
+    background: #212429;
+    font-size: 11px;
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.credits a {
+    color: #F865B0;
+    text-decoration: none;
+}
+
+body {
+ background: black;
+ color: white;
+ margin: 0;
+ font-family: netflix;
+ padding-bottom:108px ;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header{
+    padding: 15px 15px 100px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0%,black 50%, rgba(0,0,0,.5) 85%, transparent 100%);
+}
+
+.navigation-list {
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;
+ display: grid;
+ grid-auto-columns:100px ;
+ grid-auto-flow: column;
+ justify-content: space-around;
+}
+
+.featured {
+    margin-top: -90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.details-featured {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image:linear-gradient(to top, black 0%, black 40%, transparent 100% ) ;
+
+}
+
+.tags {
+   
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+ list-style: none;
+ padding: 0;
+
+}
+
+.tag{
+   
+    display: flex;
+}
+
+.tag::before{
+    content: "*";
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+
+}
+
+.tag:first-child::before{
+    display: none;
+}
+
+.action-featured{
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ padding-bottom: 2em;
+}
+
+.botton {
+ background:white;
+ display: flex;
+ align-items: center;
+ padding: 5px 1em 5px .5em;
+ border: none;
+ border-radius: 3px;
+}
+
+.button::before{
+ content: "";
+ display: inline-block;
+ width: 25px;
+ height: 25px;
+ margin-right: 5px;
+}
+
+.button-secondary {
+    background: none;
+    color:white;
+    font-size: 1.1em;
+    min-width: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+.button-secondary::before {
+    content:"";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+
+.icon-plus::before{
+    background: url(../../images/icons/Plus_icon-icons.com_71848.svg);  
+}
+
+.icon-play::before{
+  background: url(../../images/icons/play_icon.svg);  
+}
+
+
+  .icon-info::before{
+    background: url(../../images/icons/infooutline_icon.svg);  
+  }
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+  
+.list-content{
+white-space: nowrap;
+overflow-x: auto;
+}
+
+.list-item{
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+.list-item:first-child{
+    margin: 0;
+}
+
+.list{
+    padding: 0 1em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    padding:1em 0 0;
+}
+
+.list-button{
+   margin: 0;
+   padding: 0;
+display: grid;
+grid-auto-flow: column;
+list-style: none;
+color: #6e6e6e;
+padding-bottom: 1em;
+}
+
+.list-button a{
+    color: #6e6e6e;
+}
+
+.button-item{
+    text-align: center;
+    margin:auto;
+}
+
+.button-item svg {
+display:block ;
+}
+
+.button-item path {
+fill:#6e6e6e;
+}
+
+.button-item:hover :is(path,span) {
+    fill: white;
+color: white;
+}
+
+
+
+
+
